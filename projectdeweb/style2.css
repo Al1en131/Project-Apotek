@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color:#F7FFE5 ;
+    width: 260px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+.main-content{
+    background-color:beige;
+    flex-grow: 1;
+}
+
+.sidebar .description-header{
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    line-height: 16px;
+    text-align: center;
+    color:black ;
+    margin: 10px;
+}
+
+.sidebar .header .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius:8px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+.sidebar .header .list-item .icon{
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+
+}
+
+.sidebar .header .illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px 0 22px 0;
+    box-sizing: border-box;
+    background: #E1ECC8;
+}
+
+.sidebar .main .list-item .description{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+
+.sidebar .main .list-item .icon {
+    margin: 12px;
+    vertical-align:middle;
+    width: 20px;
+    height: 20px;
+}
+.icon-list {
+    margin: 12px;
+    vertical-align:middle;
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar .main .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    width: 230px;
+    box-sizing: border-box;
+    border: #EEEEEE;
+    transition: all ease-in .2s;
+}
+
+.sidebar .main .list-item:hover{
+    background: #A0C49D;
+    transition: all ease-in  .2s;
+}
+
+.hidden{
+    display: none;
+}
+  
+.sidebar.hidden {
+    transform: translateX(-550px);
+}
+
+/* navbar */
+.banner{
+    height: 60px;
+    background-color: #E1ECC8;
+}
+
+.main-content .banner .icon{
+    margin: 12px;
+    vertical-align:middle;
+    width: 28px;
+    height: 28px;
+}
+
+
+/* navigasi kanan dashboard bagian box atas*/
+.box-diagram{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+.box-1, .box-2, .box-3, .box-4{
+    width: 250px;
+    height: 80px;
+    background-color: #B5C99A;
+    padding: 20px 10px ;
+    margin: 40px 20px 20px 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.box-1 .deskripsi{
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+.box-1 .card{
+    margin-left: 90px;
+    vertical-align:middle;
+}
+
+.box-2 .deskripsi{
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+.box-2 .card{
+    margin-left: 90px;
+    vertical-align:middle;
+}
+
+.box-3 .deskripsi{
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+
+.box-3 progress{
+    height: 20px;
+    width: 100px;
+    background: #B5C99A;
+    border-radius:5px;
+    overflow:hidden;
+}
+.box-3 .card{
+    margin-left: 40px;
+    vertical-align:middle;
+}
+
+.box-4 .deskripsi{
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+
+.box-4 progress{
+    height: 20px;
+    width: 100px;
+    background: #B5C99A;
+    border-radius:5px;
+    overflow:hidden;
+}
+.box-4 .card{
+    margin-left: 40px;
+    vertical-align:middle;
+}
+
+/* navigasi kanan dashboard bagian box bawah*/
+.box-tabel-form{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* navigasi kanan dashboard bagian box tabel*/
+.tabel{
+    font-size: 20px;
+    width: 650px;
+    height: 500px;
+    background-color: #CCD5AE;
+    padding: 20px 10px ;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 7px;
+    overflow:hidden;
+}
+
+.tabel .top th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #B5C99A;
+}
+
+.tabel .top td{
+    text-align: left;
+    padding: 10px;
+}
+
+/* navigasi kanan dashboard bagian box form*/
+.form p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.form{
+    width: 480px;
+    height: 500px;
+    background-color: #CCD5AE;
+    padding: 20px 10px ;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 7px;
+    overflow:hidden;
+}
+.form form{
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.form form input[type=text]{
+    width: 95%;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.form form select {
+    width: 95%;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.form form input[type=date]{
+    width: 95%;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.form form textarea{
+    width: 450px;
+    height: 150px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    display: inline-block;
+}
+  
+.form form input[type=submit] {
+    width: 97%;
+    background-color: #94AF9F;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.form form input[type=submit]:hover {
+    background-color: #B5C99A;
+}
+  
+
+
+/* navigasi kanan berita */
+.box-berita{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-berita .box-1nya, .box-2nya, .box-3nya{
+    font-size: 20px;
+    width: 1000px;
+    height: 400px;
+    background-color: #CCD5AE;
+    padding: 20px 10px ;
+    margin: 30px;
+    border-radius: 2px;
+    overflow:hidden;
+}
+
+/* box-1nya*/
+.box-berita .box-1nya .atas .adm-icon{
+    vertical-align:middle;
+}
+
+.box-berita .box-1nya .atas .adm{
+    font-weight: 400;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.box-berita .box-1nya .atas p{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box-berita .box-1nya .isi h1{
+    text-align: center;
+    font-size: 30px;
+}
+.box-berita .box-1nya .isi p{
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 280px;
+}
+
+.box-berita .box-1nya .ubah {
+    background-color: #468B97;
+    border: none;
+    color: black;
+    border-radius: 2px;
+    padding: 8px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.box-berita .box-1nya .hapus {
+    background-color: #EF6262;
+    border: none;
+    color: black;
+    border-radius: 2px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: right;
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+/*box-2nya*/
+.box-berita .box-2nya .atas .adm-icon{
+    vertical-align:middle;
+}
+
+.box-berita .box-2nya .atas .adm{
+    font-weight: 400;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.box-berita .box-2nya .atas p{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box-berita .box-2nya .isi h1{
+    text-align: center;
+    font-size: 30px;
+}
+.box-berita .box-2nya .isi p{
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 280px;
+}
+
+.box-berita .box-2nya .ubah {
+    background-color: #468B97;
+    border: none;
+    color: black;
+    border-radius: 2px;
+    padding: 8px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.box-berita .box-2nya .hapus {
+    background-color: #EF6262;
+    border: none;
+    color: black;
+    border-radius: 2px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: right;
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+/*box-3nya*/
+.box-berita .box-3nya .atas .adm-icon{
+    vertical-align:middle;
+}
+
+.box-berita .box-3nya .atas .adm{
+    font-weight: 400;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.box-berita .box-3nya .atas p{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.box-berita .box-3nya .isi h1{
+    text-align: center;
+    font-size: 30px;
+}
+.box-berita .box-3nya .isi p{
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 280px;
+}
+
+.box-berita .box-3nya .ubah {
+    background-color: #468B97;
+    border: none;
+    color: black;
+    border-radius: 2px;
+    padding: 8px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.box-berita .box-3nya .hapus {
+    background-color: #EF6262;
+    border: none;
+    color: black;
+    border-radius: 2px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    float: right;
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+/* navigasi kanan masukkan data obat*/
+.obat {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: #B5C99A;
+}
+
+.box{
+    margin-top: 0;
+    max-width: 700px;
+    width: 100%;
+    background: #F7FFE5;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.box form .user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user .input{
+    margin: 15px;
+    width: 270px;
+}
+
+.user .input .isi{
+    display: block;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+
+.user .input input[type=text],[type=date]{
+    padding-left: 12px;
+    height: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.user .input textarea{
+    width: 685px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.user .input select{
+    padding-left: 12px;
+    height: 30px;
+    width: 285px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.ready input[type=submit] {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    width: 98%;
+    background-color: #C4D7B2;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px;
+}
+.ready input[type=submit]:hover{
+    background-color: #B5C99A;
+}
+

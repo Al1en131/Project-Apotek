@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.Data-Obat-tabel{
+    font-size: 15px;
+    width: 95%;
+    height: 500px;
+    background-color: #CCD5AE;
+    padding: 20px 10px ;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 7px;
+    overflow:hidden;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: green;
+    border: 1px solid #ddd;
+}
+
+table td{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid green;
+}
+table .gambar{
+   text-align: center;
+
+}
+.form p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.form{
+    width: 700px;
+    height: 500px;
+    background-color: #CCD5AE;
+    padding: 20px 10px ;
+    margin-left: 250px;
+    margin-top: 80px;
+    display: inline-block;
+    border-radius: 7px;
+    overflow:hidden;
+}
+.form form{
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.form form input[type=text], select{
+    width: 98%;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.form form select {
+    width: 98%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.form form input[type=date]{
+    width: 98%;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.form form textarea{
+    width: 670px;
+    height: 150px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    display: inline-block;
+}
+  
+.form form input[type=submit] {
+    width: 98%;
+    background-color: #94AF9F;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.form form input[type=submit]:hover {
+    background-color: #B5C99A;
+}
+  
+
+

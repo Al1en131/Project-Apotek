@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color:#F7FFE5 ;
+    width: 260px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+.main-content{
+    background-color:beige;
+    flex-grow: 1;
+}
+
+.sidebar .description-header{
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    line-height: 16px;
+    text-align: center;
+    color:black ;
+    margin: 10px;
+}
+
+.sidebar .header .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius:8px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+.sidebar .header .list-item .icon{
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+
+}
+
+.sidebar .header .illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px 0 22px 0;
+    box-sizing: border-box;
+    background: #E1ECC8;
+}
+
+.sidebar .main .list-item .description{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+
+.sidebar .main .list-item .icon {
+    margin: 12px;
+    vertical-align:middle;
+    width: 20px;
+    height: 20px;
+}
+.icon-list {
+    margin: 12px;
+    vertical-align:middle;
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar .main .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    width: 230px;
+    box-sizing: border-box;
+    border: #EEEEEE;
+    transition: all ease-in .2s;
+}
+
+.sidebar .main .list-item:hover{
+    background: #A0C49D;
+    transition: all ease-in  .2s;
+}
+
+.hidden{
+    display: none;
+}
+  
+.sidebar.hidden {
+    transform: translateX(-550px);
+}
+
+
+/* navbar */
+.banner{
+    height: 60px;
+    background-color: #E1ECC8;
+}
+
+.main-content .banner .icon{
+    margin: 12px;
+    vertical-align:middle;
+    width: 28px;
+    height: 28px;
+}
